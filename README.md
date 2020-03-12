@@ -1,4 +1,7 @@
 # HTTP errors response
+[![npm (scoped)](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/http-errors-response-ts)
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-green)
+![tests](https://img.shields.io/badge/tests-40%20passed-green)
 
 This library provide some Error classes to map the problems that you may want to report to your clients.
 
