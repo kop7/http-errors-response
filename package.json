@@ -1,0 +1,43 @@
+{
+  "name": "http-errors-response-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint"
+  },
+  "keywords": [
+    "http",
+    "errors",
+    "npm",
+    "response",
+    "typescript"
+  ],
+  "author": "Matija Kop",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kop7/http-errors-response.git"
+  },
+  "homepage": "https://github.com/kop7/http-errors-response#readme",
+  "description": "Library for http errors",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
